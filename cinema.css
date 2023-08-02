@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cinema_box{
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+.cinema_box img{
+    height: 400px;
+    width: 310px;
+    border-radius: 10px;
+}
+.ball{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3rem;
+    top: 3.5rem;
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+    background-color: rgb(255, 201, 23);
+    border-radius: 50%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 4rem;
+    left: 5rem;
+}
