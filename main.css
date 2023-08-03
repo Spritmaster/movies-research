@@ -9,6 +9,7 @@ html{
 }
 body{
     font-family: 'Blake';
+    background:linear-gradient(100deg, #116668 , #f0ebde 100%)
 }
 a{
     text-decoration: none;
@@ -22,8 +23,10 @@ a{
 .header{
     width: 100%;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgb(32, 125, 125);
+    box-shadow: 0 0 30px rgb(254, 9, 9);
     margin-bottom: 1rem;
+    color: #fff;
 }
 .title{
     font-size: 3rem;
@@ -35,7 +38,9 @@ a{
     max-width: 350px;
     align-items: center;
     border:2px solid rgb(74, 71, 71);
+    border-radius: 4px;
     margin-bottom: 3rem;
+    background: #fff;
 }
 .research{
 width: 300px;
@@ -44,8 +49,6 @@ padding: 1.4rem;
 outline: none;
 border: none;
 font-size: 2rem;
-background: transparent;
-
 }
 .research::placeholder{
     font-size: 2rem;
@@ -61,6 +64,12 @@ background: transparent;
     overflow: hidden;
     position: relative;
     background:linear-gradient(100deg, #ffee36 0% 50% , #6fd88f 100%)
+}
+.m-box:hover{
+opacity: 0.8;
+}
+.m-box:active{
+    opacity: 0.6;
 }
 
 .movie-type{

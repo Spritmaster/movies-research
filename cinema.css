@@ -54,3 +54,34 @@ body{
     bottom: 4rem;
     left: 5rem;
 }
+hr{
+    margin-bottom: 2rem;
+}
+.title__text{
+    font-size: 3rem;
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(to right, #f43030, #1addff,   #66ff00, #b755b9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.plot__text{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(to right, #302323, #264044,   #09ff42, #24465a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.cinema__info h1{
+font-family: sans-serif;
+font-weight: 700;
+margin-bottom: 1rem;
+}
+.cinema__info h1 span{
+    max-width: 40rem;
+    font-family: 'Blake';
+    font-weight: 400;
+    font-style: italic;
+}

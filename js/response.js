@@ -1,5 +1,5 @@
 
-let key='263d22d8'
+let key='8c8f0b3f'
 
 async function getMovies(){
     const api=`https://www.omdbapi.com/?s=tom&apikey=${key}`
@@ -15,6 +15,9 @@ document.addEventListener("keyup",(e)=>{
         async function qidirish(){
             const api=`https://www.omdbapi.com/?s=${inp.value}&apikey=${key}`
             const response =await fetch(api)
+            if (response.status !== 200) {
+              throw new Error("errer");
+            }
             const dataQ= await response.json()
             inp.value=" "
             return dataQ
@@ -70,6 +73,7 @@ qidirish()
   })
   updateUI(data.Search)
 })
+.catch((err) => {console.log(Error);})
 
 
 
