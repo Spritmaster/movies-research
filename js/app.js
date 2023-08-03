@@ -40,12 +40,14 @@ box.addEventListener("click",()=>{
 
 getMovies()
 .then((data)=>{
-    console.log(data.Search);
-    data.Search.forEach(el=>{
-        console.log(el.Title);
-    })
     updateUI(data.Search)
 })
+.catch((err) => {alert("Saytda xatolik yuz berdi");})
+
+let body=document.querySelector("body")
+let dark=document.querySelector(".ctrl-clors").addEventListener("click",(()=>{
+  body.classList.toggle("dark")
+}))
 
 
 

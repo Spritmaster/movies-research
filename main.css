@@ -1,3 +1,13 @@
+:root{
+    --bg:linear-gradient(100deg, #116668 , #f0ebde 100%);
+    --card:linear-gradient(100deg, #ffee36 0% 50% , #6fd88f 100%);
+    --b00:#000;
+}
+.dark{
+    --bg:linear-gradient(100deg, #0e100d , #48453e 100%);
+    --card:linear-gradient(100deg, #438c7b 0% 50% , #6fd88f 100%);
+    --b00:#fff;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +19,7 @@ html{
 }
 body{
     font-family: 'Blake';
-    background:linear-gradient(100deg, #116668 , #f0ebde 100%)
+    background:var(--bg);
 }
 a{
     text-decoration: none;
@@ -29,9 +39,16 @@ a{
     color: #fff;
 }
 .title{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
     font-size: 3rem;
     font-family: sans-serif;
     font-weight: 700;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 .inpt{
     display: flex;justify-content: space-between;
@@ -63,7 +80,8 @@ font-size: 2rem;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    background:linear-gradient(100deg, #ffee36 0% 50% , #6fd88f 100%)
+    background:var(--card);
+    color:var(--b00);
 }
 .m-box:hover{
 opacity: 0.8;
@@ -110,7 +128,7 @@ opacity: 0.8;
 .m-box{
     cursor: pointer;
 }
-.id{
-    position: absolute;
-    color: ;
+.ctrl-clors{
+    font-size: 2rem;
+    cursor: pointer;
 }

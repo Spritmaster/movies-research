@@ -4,6 +4,9 @@ let key='8c8f0b3f'
 async function getMovies(){
     const api=`https://www.omdbapi.com/?s=tom&apikey=${key}`
     const res =await fetch(api)
+    if (res.status !== 200) {
+      throw new Error("errer");
+    }
     const data= await res.json()
     return data
 }
@@ -68,13 +71,9 @@ const updateUI = (movieArr) => {
 qidirish()
 .then((data)=>{
   posters.innerHTML=" " 
-  console.log(data.Search);
-  data.Search.forEach(el=>{
-      console.log(el.Title);
-  })
   updateUI(data.Search)
 })
-.catch((err) => {console.log(Error);})
+.catch((err) => {alert("Saytda xatolik yuz berdi");})
 
 
 
