@@ -46,6 +46,7 @@ const updateUI = (movieArr) => {
       <h1>${movie.Title}</h1>
       <p>Year: <span>${movie.Year}</span></p>
       </div>
+      <span class="movie-type"> <img src="./images/${movie.Type}.png" alt="" width="50"></span>
 
     `;
     box.addEventListener("click",()=>{
